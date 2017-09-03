@@ -8031,7 +8031,7 @@ section[id^="home-"] {
 section[id^="home-"] h2 {
   font-weight: bold;
   font-size: 3.0em;
-  line-height: 0.9em;
+  line-height: 1.1em;
   color: #691D99;
 }
 section[id^="home-"] .page-header {
@@ -8094,7 +8094,7 @@ section[id^="home-"] .continue:hover {
 }
 #home-intro h1 {
   color: rgba(255,255,255,0.75);
-  font-size: 100px;
+  font-size: 3.0em;
   line-height: 100px;
   margin-bottom: 20px;
 }
