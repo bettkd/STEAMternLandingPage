@@ -8078,8 +8078,11 @@ section[id^="home-"] .continue:hover {
   width: auto;
   height: auto;
   z-index: -1000;
-  background: url("../images/home/intro.jpg") no-repeat;
+  background: url("../images/home/intro.jpg") no-repeat center center;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 #home-intro:before {
   content: '';
