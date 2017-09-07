@@ -17,8 +17,8 @@ $(document).ready(function(){
 
 		$.post( url, req, function(data, status) {
 	        if(data.success) {
+	        	$('html, body').animate({scrollTop: '0px'}, 300);
 	        	swal("Thank you, " + data.success.displayName + "!", "You have been successfully registered!", "success");
-	        	location.reload();
 	        }
 	        else {
 	        	swal("Error", data.error.message , "error");
