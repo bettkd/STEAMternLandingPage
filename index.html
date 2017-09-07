@@ -32,9 +32,11 @@
   <link href="assets/stylesheets/app.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
   <script src="http://cdn.jsdelivr.net/jquery.localscroll/1.4.0/jquery.localScroll.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="assets/scripts/main.js" type="text/javascript"></script>
 </head>
 <body>
   <header id="page-header">
@@ -124,34 +126,23 @@
              Leave your full name and email address below, and we’ll send you an invitation to check out our mobile app</p>
           </section>
           <section class="page-form" id="mc_embed_signup">
-            <form class="validate" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" onsubmit="signUpUser(this);"> <!--http://eterni.us3.list-manage.com/subscribe/post?u=9a223e3648b6f6c8cab84d34a&amp;id=5b0aa5f306-->
-              <div class="clear" id="mce-responses">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-              </div>
+            <form id="mc-signup-form" method="post">
               <div class="form-name">
                 <div class="mc-field-group form-group">
-                  <input class="required form-control" id="mce-FNAME" name="FNAME" placeholder="First name" type="text" value="">
+                  <input class="required form-control" id="mce-FNAME" name="FNAME" required placeholder="First name" type="text" value="">
                 </div>
                 <div class="mc-field-group form-group">
-                  <input class="required form-control" id="mce-LNAME" name="LNAME" placeholder="Last name" type="text" value="">
+                  <input class="required form-control" id="mce-LNAME" name="LNAME" required placeholder="Last name" type="text" value="">
                 </div>
               </div>
               <div class="mc-field-group form-group">
-                <input class="required form-control email" id="mce-EMAIL" name="EMAIL" placeholder="Email address" type="email" value="">
+                <input class="required form-control email" id="mce-EMAIL" name="EMAIL" required placeholder="Email address" type="email" value="">
               </div>
               <div class="clear form-group">
-                <input class="btn btn-primary" id="mc-embedded-subscribe" name="subscribe" type="submit" value="Sign up for early access">
+                <input class="btn btn-primary" id="mc-embedded-subscribe" type="submit" value="Sign up for early access">
               </div>
             </form>
           </section>
-
-          <script src="assets/scripts/main.js" type="text/javascript"/>
-          <script src="http://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js" type="text/javascript">
-          </script>
-          <script type="text/javascript">
-          (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);
-          </script>
         </div>
       </div>
     </section>
